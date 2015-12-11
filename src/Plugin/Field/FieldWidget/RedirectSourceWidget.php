@@ -25,7 +25,7 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
  *   id = "redirect_source",
  *   label = @Translation("Redirect source"),
  *   field_types = {
- *     "link"
+ *     "redirect_source"
  *   },
  *   settings = {
  *     "placeholder_url" = "",
@@ -90,10 +90,10 @@ class RedirectSourceWidget extends WidgetBase {
         }
       }
 
-      $element['path']['#ajax'] = array(
-        'callback' => 'redirect_source_link_get_status_messages',
-        'wrapper' => 'redirect-link-status',
-      );
+      //$element['path']['#ajax'] = array(
+      //  'callback' => 'redirect_source_link_get_status_messages',
+      //  'wrapper' => 'redirect-link-status',
+      //);
     }
 
     return $element;
